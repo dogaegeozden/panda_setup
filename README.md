@@ -38,7 +38,7 @@ __--help:__ Shows the help message and exits.
 
 4) Open a new terminal and type
 
-      sudo panda start
+       panda start
 
 <br>
 
@@ -84,7 +84,6 @@ __--help:__ Yardım sayfasını görüntüler.
 
 4) Terminali aç ve uygulamayı başlat
 
-       sudo panda start
-
+       panda start
 
 <br>
