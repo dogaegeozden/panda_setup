@@ -9,14 +9,14 @@ main() {
     # Calling the install_softwares_from_sources function.
     install_softwares_from_sources
 
-    # Calling the install_softwares_from_github function.
-    install_softwares_from_github
-
     # Calling the install_softwares_with_flatpak function.
     install_softwares_with_flatpak
 
     # Calling the install_softwares_with_snap function
     install_softwares_with_snap
+    
+    # Calling the install_softwares_from_github function.
+    install_softwares_from_github
 
 }
 
