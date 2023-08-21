@@ -3,22 +3,11 @@
 main() {
     # The function which runs the entire script.
 
-    # Calling the declare_variables function.
-    declare_variables
-
     # Calling get_the_credentials function
     get_the_credentials
 
     # Calling connect_to_wifi function.
     connect_to_wifi
-
-}
-
-declare_variables() {
-	# A function which creates variables.
- 
-    # Creating a variable called username
-    username=${SUDO_USER:-${USER}}
 
 }
 
