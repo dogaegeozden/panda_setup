@@ -2,8 +2,10 @@
 
 main() {
 
+    # Calling the declare_variables function.
     declare_variables
 
+    # Calling the stop_and_disable_unnecessary_services function.
     stop_and_disable_unnecessary_services
 
 }
@@ -11,8 +13,6 @@ main() {
 declare_variables() {
 
     unnecessary_services_file_path="/opt/panda/configuration_files/services.list"
-    
-    # ()
 
 }
 
@@ -24,7 +24,7 @@ stop_and_disable_unnecessary_services() {
 
             echo "Stopping $service"
 
-            sudo systemctl stop "$service"
+            systemctl stop "$service"
 
         fi
 
@@ -32,7 +32,7 @@ stop_and_disable_unnecessary_services() {
 
             echo "Disabling $service"
 
-            sudo systemctl disable "$service"
+            systemctl disable "$service"
 
         fi
 
@@ -40,4 +40,5 @@ stop_and_disable_unnecessary_services() {
     
 }
 
+# Calling the main function.
 main
