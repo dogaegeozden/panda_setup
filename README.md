@@ -30,18 +30,61 @@ __--help:__ Shows the help message and exits.
 
 2) Download the installer
 	
-       curl -L https://github.com/dogaegeozden/jadeguard/releases/download/firewall/jadeguard.deb -o jadeguard.deb
+       curl -L https://github.com/dogaegeozden/panda_setup/releases/download/setup/panda.deb -o panda.deb
 
 3) Start the installer
 
-       sudo dpkg -i jadeguard.deb
+       sudo dpkg -i panda.deb
 
 4) Open a new terminal and type
 
-      sudo jadeguard set
+      sudo panda start
 
 <br>
 
 ---
+
+<br>
+
+![PandaSetupLogo](https://raw.githubusercontent.com/dogaegeozden/panda_setup/main/app_images/panda_setup.png)
+
+<br>
+
+Panda setup bir kurulum assistanıdır, kullancıların bilgisayarlarını hızlı kurmalarına yardımcı olan.
+ 
+ <br>
+ 
+ ## KOMUTLAR
+
+__edit:__ Kullanıcıların istediklerini düzenleyip değiştirmelerini sağlayan Opens the edit screen where the user can select what he/she wants to edit.
+
+__start:__ Uygulamayı başlatır.
+
+<br>
+
+## ARGÜMANLAR
+
+__--help:__ Yardım sayfasını görüntüler.
+
+<br>
+
+## YÜKLEME
+
+1) Bağımlılıkları yükle
+	
+       sudo apt install nano netfilter-persistent iptables-persistent -y
+
+2) Yükleyiciyi indir
+	
+       curl -L https://github.com/dogaegeozden/panda_setup/releases/download/setup/panda.deb -o panda.deb
+
+3) Yükleyiciyi başlat
+
+       sudo dpkg -i panda.deb
+
+4) Terminali aç ve uygulamayı başlat
+
+       sudo panda start
+
 
 <br>
