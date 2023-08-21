@@ -103,7 +103,7 @@ install_softwares_from_github() {
         fi
     
         # Checking if the package is not installed
-        if [[ $(apt policy "$app_name" 2>/dev/null) == *"(none)"* ]]; then
+        if [[ $(apt policy "$app_name" 2>/dev/null) != *"Installed"* ]]; then
 
             # Starting the installers code.
             dpkg -i "$installer_name"
